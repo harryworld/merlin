@@ -81,16 +81,6 @@ function initTwitterFeed() {
     /* More about fetch params on http://www.jasonmayes.com/projects/twitterApi */
     twitterFetcher.fetch('347101057018638336', '', 1, true, false, false, '', true, handleTweets, false);
 }
-$(document).ready(function () {
-    initNavbar();
-    initPortfolio();
-    initAnimations();
-    initTwitterFeed();
-});
-$(window).load(function () {
-    $(".loader .fading-line").fadeOut();
-    $(".loader").fadeOut("slow");
-});
 function handleTweets(tweets) {
     var element = document.getElementById('feed');
     if (element) {

@@ -12,7 +12,11 @@
 </body>
 
 <template name="layout">
+  <div class="btn btn-success merlin">Show/Hide Merlin Template</div>
+
+{{#if loadHello}}
   {{> hello}}
+{{/if}}
 </template>
 
 <template name="hello">

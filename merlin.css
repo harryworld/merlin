@@ -1,1 +1,7 @@
 /* CSS declarations go here */
+div.merlin {
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  z-index: 1000000;
+}
